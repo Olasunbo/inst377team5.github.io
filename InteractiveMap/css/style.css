@@ -1,0 +1,14 @@
+
+
+#map{
+    display: flex;
+    min-height: 400px;
+    width : 50%;
+    flex: 1;
+    flex-direction: column; 
+    background-color: rgb(233, 243, 243) ;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+}
