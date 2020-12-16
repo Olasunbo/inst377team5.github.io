@@ -1,0 +1,13 @@
+In wireframes these are replacements
+bodoni= playfair displa
+lao = tenor sans
+arial = karla
+
+
+font-family: 'Karla', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Tenor Sans', sans-serif;
+
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Playfair+Display&family=Tenor+Sans&display=swap" 
+    rel="stylesheet">
