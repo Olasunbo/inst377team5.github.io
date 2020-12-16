@@ -62,15 +62,16 @@ https://www.w3schools.com/cssref/pr_pos_top.asp
 
 /*positioning*/
 #map{
-    bottom: 0;
-	left: 0;
-	height: 465px;
-	margin: auto;
-	position: absolute;
-	right: 0;
-	text-align: center;
-	top: 0;
-	width: 70%;
+    display: flex;
+    min-height: 400px;
+    width : 50%;
+    flex: 1;
+    flex-direction: column; 
+    background-color: rgb(233, 243, 243) ;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
 }
 
 
