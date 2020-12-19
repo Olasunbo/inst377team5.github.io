@@ -1,14 +1,61 @@
 
 
+html, body {
+    background-color: #ffffff;
+    margin: 0;
+    height:100%;
+    width: 100%;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row; /*Move items through the row */
+    justify-content: center; /* Controls what happens in spce so center shit*/
+    width: 100%; /*probably unecessary */
+    background-color: #A73838;
+    text-shadow: -1px 0 #FFFF03, 0 1px #FFFF03, 1px 0 #FFFF03, 0 -1px #FFFF03;/*outline of letters */
+    font-family: 'Playfair Display', serif;
+    color: #E4E4E4;
+    font-size: 15px;
+}
+/*  */
+.himg{
+    width:70px;
+    height:70px;
+    padding: 5px; 
+}
 #map{
     display: flex;
     min-height: 400px;
-    width : 50%;
+    width : 80%;
     flex: 1;
     flex-direction: column; 
     background-color: rgb(233, 243, 243) ;
     text-align: center;
     justify-content: space-around;
     align-items: center;
-    margin:10px;
+    margin-left:10%;
+   
+}
+
+.features {
+	font-family: 'Fredoka One', cursive;
+	display:flex;
+	flex:50%;
+	width:66%;
+	background-color: #FFFFFF;
+	border: 2px solid black;
+    text-align: vertical-align;
+    margin-left:17%;
+
+
+	
+}
+.features, h2 {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
