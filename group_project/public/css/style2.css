@@ -177,3 +177,16 @@ p{
     justify-content: center;
     margin:10px;
 }
+
+.flexbox-item{
+    display: flex;
+    min-height: 100px;
+    width : 50%;
+    flex: 1;
+    flex-direction: column; 
+    background-color: rgb(245, 252, 252) ;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+}
