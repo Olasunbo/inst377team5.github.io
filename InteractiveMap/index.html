@@ -8,17 +8,48 @@
 
     </head>
 <body>
-<h1>Libraries in PG County</h1>
-
-<div id="map">
+    <div class="header">
+        <h1>LibLocator</h1>
+        <img class= "himg" src="./images/pg_logo.jpg" alt="Prince Georges County seal">
+    </div>
     
 
+<div id="map">
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMdgZScanrZS9G_8D9f96d8q0roFXfhkM&callback=initMap"></script>
 <script type:"text/javascript" src = "js/map.js"></script>
 </div>
 
+    <div class = "features">
+    <h2>Google API Map</h2>
+    <ol>
+    <li>
+    <p>The purpose of the interactive Google Map is so that users can see which libraries 
+     are around them. The flag represent where the user in located. The 
+    red pins are the location of libraries. </p></li>
+    <li> <p>The map allows the user to zoom in and out and see the entire worlds if
+        they want too. The view can be switched from Map to Satillite if the user
+        wishes to see what the surroundings of the library are like. The API
+        also provides a full-screen option.
+    </p></li>
+    <li> <p>This Map was created by using a free API offered by Google. To get
+        permission to use it one must create a project in google cloud and then 
+        create the key. The Appropriate API addon need to be downloaded too.
+        Up to 25,0000 requests per day are free.
+    </p></li>
+    <li> <p>If the user wishes to see which library is represented, all they need to do
+        is click on the pin and it will tell them the name and address of that library.
+    </p></li>
+    <li> <p>If given more time we would have liked to use are PG County library
+        database to mark the library locations on the map. The issue is that we were
+        not sure how to make this work. For the sake of this example, the 
+        coordanites are hard coded with lattitude and longitude.
+    </p></li>
+</ol>
+ 
+ </div>
+</div>
+
+
 
 </body>
 </html>
-
-
