@@ -1,0 +1,171 @@
+.header { grid-area: header; }
+.vertical-menu { grid-area: menu; }
+.component { grid-area: main; }
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'menu main main main main main'
+        'menu main main main main main';
+    background-color: #ffffff;
+    margin: 0;
+    font-size: 15px;
+}
+
+.header, .vertical-menu {
+    background-color: #A73838;
+    text-align: center;
+
+}
+
+.component {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: -1px 0 #FFFF03, 0 1px #FFFF03, 1px 0 #FFFF03, 0 -1px #FFFF03;/*outline of letters */
+    font-family: 'Playfair Display', serif;
+    color: #E4E4E4;
+}
+
+.himg{
+    width:70px;
+    height:70px;
+    padding: 5px; 
+}
+
+/* https://www.w3schools.com/howto/howto_css_vertical_menu.asp*/
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    /* width: 75%; Set a width if you like 
+    height: 100%;*/
+    width: 190px;
+    height: 670.83px;
+  }
+
+  .vertical-menu a, .vertical-menu label {
+    background-color: #A73838; /*background color */
+    color: #ffffff; /*text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  .vertical-menu a{
+    box-sizing: border-box;
+    flex-basis: 20%; /*Evenly space links */
+  }
+
+  .vertical-menu a.nimg img{
+      flex: 2;
+      height: 100%;
+      width: 100%;
+  }
+
+  .vertical-menu a.not{
+      flex: 1;
+  }
+/* 
+https://www.w3schools.com/howto/howto_css_center-vertical.asp
+https://www.w3schools.com/cssref/pr_pos_top.asp
+*/
+
+.grid2x2, p, #map {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.box, p, #map{
+    display: flex;
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.thumbnail {
+    background-color: #FFF;
+    color: black;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    }
+.information, .reviews {
+    background-color: #F1F9FF;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    }
+.information .libaryinfo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: #7FC4FD;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    flex: 1;
+    justify-content: center;
+}
+
+.grid1x2 .box{
+    display: flex;
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.grid1x2 .box2{
+    background-color: #F1F9FF;
+}
+.reviews{
+    margin: 0px;
+    height: 100%;
+}
+
+h2{
+    align-items: flex-start;
+    text-align: left;
+}
+
+p{
+    font-size: 28px;
+}
+
+
+#map{
+    min-height: 400px;
+    min-width: auto;
+    max-width:70%;
+    height:90%;
+}
+
+.grid1x2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+  }
+
+/**
+.mimg{
+    min-height: 400px;
+    max-width: 100%;
+    width: 35%;
+    height: auto;
+}  
+
+**/
