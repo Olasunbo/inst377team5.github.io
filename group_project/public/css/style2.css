@@ -169,3 +169,11 @@ p{
 }  
 
 **/
+
+.flexbox-button{
+    flex: 1;
+    background-color: rgb(221, 24, 24) ;
+    text-align: center;
+    justify-content: center;
+    margin:10px;
+}
