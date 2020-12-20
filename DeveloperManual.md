@@ -1,4 +1,4 @@
-##Google API map for developers
+## Google API map for developers
 
 The first step to developing with this API is creating an API key through 
 Google. This API key is an indentifier that authenticates specific requests
@@ -21,7 +21,7 @@ It is recommended to user a true DOCTYPE with your web application. This will al
 the website to be cross-browser compliant.
 
 
-###Steps for creating API key.
+#### Steps for creating API key
 1. Create Google Cloud project within the Cloud Console on the project selector page.
 2. Go to the APIs & Services > Credentials page.
 3. On the Credentials page, click Create credentials > API key.
