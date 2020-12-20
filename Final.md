@@ -42,7 +42,8 @@ The API allowed for customization on our end with coding coordinates and adding 
 
 While our map does help the user see what libraries are within the county and where they are located, it does not
 have an integrated GPS that guide the user to that location. This would be necessary feature to maximize 
-the effieciency of connecting residents and students to the library.
+the effieciency of connecting residents and students to the library. We are also missing a feature that identifies
+where the user is, an enable location feature would have made this more helpful for the users.
 
 #### Challenges
 
