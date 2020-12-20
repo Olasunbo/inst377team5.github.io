@@ -1,7 +1,6 @@
 ## Interactive Google Map Guide.
 
-###### Key:
-Red pin = Specific library.
+###### Key: Red pin = Specific library.
 
 
 
