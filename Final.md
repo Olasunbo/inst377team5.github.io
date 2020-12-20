@@ -7,7 +7,9 @@
 How are students and residents in PG County finding libraries near them?
 Our mission is to help residents and students in Prince Georges County connect to 
 libraries within their area. With our map they can see the exact location and 
-address of the library and find the quickest route.
+address of the library and find the quickest route. In additon, most libraries
+provide free internet with computers that can help connect residents to new
+job opportunities.
 
 #### Stakeholders and Target Browser
 
