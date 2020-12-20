@@ -29,7 +29,7 @@ We also wanted to make a search bar to search through the dataset, but ran into 
 #### Reasoning
 
 The dynamic map API allows the user to get a real sense of where the library is located and what is around them.
-The API allowed for custimization on our end with coding coordinates and adding images for pins.
+The API allowed for customization on our end with coding coordinates and adding images for pins.
 
 #### Does it help?
 
