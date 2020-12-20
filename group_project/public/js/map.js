@@ -13,7 +13,10 @@ function initMap(){
         coords:{lat: 38.859040, lng: -76.898850},
         content:'<h2>Hillcrest Heights Branch Libray</h2><h3>2398 Iverson St, Hillcrest Heights, MD 20748</h3>'
     });
- 
+    addMarker({
+        coords:{lat: 38.91545, lng: -76.91231},
+        content:'<h2>Francis A. Gregory Neighborhood Library</h2><h3>3660 Alabama Ave SE, Washington, DC 20020</h3>'
+    });
     addMarker({
         coords:{lat: 38.837926994749715, lng: -76.75424599096701},
         content:'<h2>County Correctional Center Library</h2><h3>13400 Dille Dr, Upper Marlboro, MD 20772</h3>'
@@ -26,7 +29,11 @@ function initMap(){
         coords:{lat: 38.84537834168984, lng: -76.95606871434686},
         content:'<h2>Oxon Hill Branch Library</h2><h3> 6200 Oxon Hill Rd, Oxon Hill, MD 20745</h3>'
     }); //Hillcrest Heights Branch Libray
-
+    addMarker({
+        coords:{lat: 38.816652182983894, lng: -76.88769846629866},
+        iconImage:'http://maps.google.com/mapfiles/kml/pal2/icon13.png',
+        content:'<h2>You are Here</h2>'
+    });
     
     // Add Marker Function
     function addMarker(props){
