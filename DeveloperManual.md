@@ -1,4 +1,4 @@
-##Google API map for developers
+## Google API map for developers
 
 The first step to developing with this API is creating an API key through 
 Google. This API key is an indentifier that authenticates specific requests
