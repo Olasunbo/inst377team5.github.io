@@ -38,14 +38,6 @@ body {
     padding: 5px; 
 }
 
-/* 
-https://www.w3schools.com/howto/howto_css_center-vertical.asp
-https://www.w3schools.com/cssref/pr_pos_top.asp
-*/
-
-/*Currently Covers entire screnn possibly can stay*/
-
-
 
 .mimg{
     display: flex;
@@ -66,7 +58,7 @@ https://www.w3schools.com/cssref/pr_pos_top.asp
   left: 0;
 }
 
-/*Right, Drop Down*/
+
 .dropbtn {
   background-color: #000000;
   color: #FFD700;
@@ -123,98 +115,3 @@ https://www.w3schools.com/cssref/pr_pos_top.asp
 
 
 
-/* NEED TO CREATE SOME TYPE OF MEDIA FOR WHEN THE SCREEN GETS TOO SMALL */
- /*Trash section
-
-
-
-
-
-#map{
-    min-height: 400px;
-    max-width:100%;
-    max-height:100%;
-    vertical-align: middle;
-}
-
-
-#api{
-    min-height: 400px;
-    max-width: 100%;
-    width: 35%;
-    height: auto;
-}
-      display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 600px;
-   
-   flex-direction: column; 
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    margin:10px;
- text-align: center;
-display: inline-block;
-width: 100%;
-text-align: center;
-    min-height: 400px;
-    width : 50%;
-
-
-/* Not sure what this is for. Left it in just in case it's important 
-	body{
-		background-color:#ffff;
-		font:1em sans-serif;  
-		border-left: 180px solid red;
-		border-top: 80px solid red; 
-		border-color: #c94f4f;  
-	}
-
-	form{
-		margin: 0 auto;
-		width: 30%;
-		padding: 2em;
-			text-align:left;
-		
-	}
-	h1{
-		text-align:center;
-	}
-	ul{
-		list-style:none;
-		padding:0;
-		margin:0;
-	}
-
-	form li + li {
-		margin-top: 3em;
-	}
-	label{
-		display: inline-block;
-
-	}
-	input, textarea{
-		font: 1em sans-serif;
-		width:300px;
-		box-sizing: border-box;
-		border: 1px solid #4d79ff;
-		border-radius: 5px;
-	}
-	input:focus, textarea:focus {
-		border-color:#17202A;
-	}
-	textarea{
-		vertical-align: top;
-		height: 5em;
-		
-	}
-
-	button{
-		background-color:#4d79ff;
-		margin-left:.5em;
-		text-align:left;
-		border-radius: 5px;
-	}
-*/
