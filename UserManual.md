@@ -1,7 +1,11 @@
 ##Interactive Google Map Guide.
 
 Key:
+<<<<<<< HEAD
 Red pin = Specific library.
+=======
+[Red pin = Specific library]
+>>>>>>> b5784bd94b31fe5c9fc8f53cb10e34834b7538bf
 
 
 This dynamic Google Map API allows the user to see what libraries are within the Prince Georges County.

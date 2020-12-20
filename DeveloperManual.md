@@ -1,29 +1,27 @@
-##Interactive Google Map Guide.
+##Google API map for developers
 
-Key:
-Red pin = Specific library.
+The first step to developing with this API is creating an API key through 
+Google. This API key is an indentifier that authenticates specific requests
+associated with the users project. The reason for this is tracking usage and 
+billing. You can do up to 25,000 searches per day for free.
+
+Once the key is created, the developer will see a listed of numbers and 
+characters associated with they key. This is the key that is linked in the 
+JavaScript code.
+
+This Google Map API allows developers to customize the map with their own
+content. This includes images for specific pins for display on webpages 
+or cell-phones and tablets. 
+
+This JavaScript API uses four basic map types: Satellite, Roadmap, hybrid, 
+and terrain. These can all be modified using styles and layers, controls and
+events, and various services and libraries.
 
 
-This dynamic Google Map API allows the user to see what libraries are within the Prince Georges County.
 
-The user can drag areas of the map to get a better view by clicking
-and dragging their mouse. This feature also allows the user to see
-different counties, states, and even countries.
 
-When the user is interested in a specific library location on the map
-they can click on the red pin and it will show them the name and the
-address.
-
-By default the user is on the "map" view. They can reduce clutter by unchecking
-the terrian box that appears when hovering over "map".
-
-If they wish to see what the surrounding area of the library looks like they 
-can switch the view to "satellite". This allows them to see exactly what the area 
-looks like in real life. This is done through satellite imagery.
-To further reduce clutter in the satellite view, the user can turn
-off labels and have a better view.
-
-In the top right hand corner of the map there is a full-screen option.
-
-The Google API comes with a built in "terms of use" and "report a map error" 
-that the user can use at thier own discresion.
+###Steps for creating API key.
+1. Create Google Cloud project within the Cloud Console on the project selector page.
+2. Go to the APIs & Services > Credentials page.
+3. On the Credentials page, click Create credentials > API key.
+4. Close the page. The new API key is listed in the Credentials page under API keys.
