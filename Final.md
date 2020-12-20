@@ -13,7 +13,8 @@ address of the library and find the quickest route.
 
 The stakeholders are the children and adults of PG County. Our aim is to help students find 
 libraries near them, but are website open to all residents for use. Residents, students, and 
-visitors to PG County can all benefit from our service.
+visitors to PG County can all benefit from our service. Our service is aimed to be cross-bowser
+compliant. This means that it can be accessed for any browser. 
 
 #### Data
 
