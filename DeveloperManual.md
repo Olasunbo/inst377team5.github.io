@@ -17,6 +17,9 @@ This JavaScript API uses four basic map types: Satellite, Roadmap, hybrid,
 and terrain. These can all be modified using styles and layers, controls and
 events, and various services and libraries.
 
+
+
+
 ###Steps for creating API key.
 1. Create Google Cloud project within the Cloud Console on the project selector page.
 2. Go to the APIs & Services > Credentials page.
