@@ -132,6 +132,22 @@ https://www.w3schools.com/cssref/pr_pos_top.asp
 .reviews{
     margin: 0px;
     height: 100%;
+    flex-wrap: wrap;
+}
+
+.feed {
+    background-color: #FFF;
+    color: black;
+    padding: 20px;
+    margin: 25px;
+    flex: 2;
+    text-align: center;
+    }
+
+.prompt{
+    flex: 1;
+    justify-content: center;
+
 }
 
 h2{
@@ -160,6 +176,18 @@ p{
     height: 100%;
   }
 
+button{
+    display: inline-block;
+    background-color: #50adf8;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    width: 70%;
+    cursor: pointer;
+    margin: 5px;
+  }
+
 /**
 .mimg{
     min-height: 400px;
@@ -169,24 +197,3 @@ p{
 }  
 
 **/
-
-.flexbox-button{
-    flex: 1;
-    background-color: rgb(221, 24, 24) ;
-    text-align: center;
-    justify-content: center;
-    margin:10px;
-}
-
-.flexbox-item{
-    display: flex;
-    min-height: 100px;
-    width : 50%;
-    flex: 1;
-    flex-direction: column; 
-    background-color: rgb(245, 252, 252) ;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    margin:10px;
-}
