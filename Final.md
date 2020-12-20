@@ -1,4 +1,4 @@
-# Liblocater
+# LibLocater
 
 ###### Team Members: Olasunbo Salami, Samantha Kamal, Rhon Ramos, Huy Nguyen, Julien Jourdanet
 
