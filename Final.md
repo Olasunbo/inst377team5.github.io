@@ -30,6 +30,9 @@ We also wanted to make a search bar to search through the dataset, but ran into 
 
 #### Reasoning
 
+We believe that helping people connect to libraries creates more opportunities for them. Most libraries offer 
+wi-fi which can help residents apply for jobs and learn new skills. This also helps students have access to 
+knowledge they may not otherwise be exposed to. We believe this has a postive impact on communities.
 The dynamic map API allows the user to get a real sense of where the library is located and what is around them.
 The API allowed for customization on our end with coding coordinates and adding images for pins.
 
