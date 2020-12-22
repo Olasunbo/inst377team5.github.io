@@ -16,7 +16,7 @@ let db = new sqlite3.Database(DBSOURCE, (err) => {
     }else{
         console.log('Connected to the SQLite database.')
         //let install_sql = fs.readFileSync('/Users/bill/gitUMD/INST377-ESG1-FALL_2020/public/assignment_2/src/install_sqlite_tables.sql', 'utf-8')
-        let install_sql = fs.readFileSync('./src/install_sqlite_tables.sql', 'utf-8').toString();
+        let install_sql = fs.readFileSync('./src/install_tables.sql', 'utf-8').toString();
         install_sql = install_sql.replace("\n","");
         //console.log('install_sql:' + install_sql)
         // Convert the SQL string to array so that you can run them one at a time.
