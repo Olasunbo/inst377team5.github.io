@@ -6,7 +6,17 @@
     <title>INST377-Team 5 Index page</title>
 </head>
 <body>
-
+    <script src="./js/testFetch.js"></script>
     <a href="./project.html">Group Project Page</a>
+
+    <!-- Test button that fetches entrie PG country libraries JSON -->
+    <button onclick = testFetchFunction()>Click me to get the Libraries!</button><br>
+    <p id = "fetchLibraries"></p><br>
+
+    <label for = "get_library_lat_long">Enter a number: </label>
+    <input type = "text" id = "get_library_lat_long" name = "get_library_lat_long"><br>
+    <button onclick = getLibraryLatLong()>Get Lat and Long Coordinates!</button><br>
+    <p id = "libraryLat"></p>
+    <p id = "libraryLong"></p>
 </body>
 </html>
