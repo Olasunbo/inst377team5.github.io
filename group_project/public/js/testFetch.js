@@ -26,5 +26,18 @@ function testFetchFunction()
    for(x in testArray)
    {
        libraryAddressArray.push(testArray[x]["location_1"]);
+       //console.log(libraryAddressArray[x]["latitude"]);
+       //console.log(libraryAddressArray[x]["longitude"]);
    }
+   console.log(libraryAddressArray);
+}
+
+//getLibraryLatLong function retrives latitude and longitude coordinates of a library
+function getLibraryLatLong()
+{
+    let libraryNumber = document.getElementById("get_library_lat_long").value;
+
+    //shows user lat and long corrdinates
+    document.getElementById("libraryLat").innerHTML = "Library Latitude = " + libraryAddressArray[libraryNumber]["latitude"];
+    document.getElementById("libraryLong").innerHTML = "Library Langitude = " + libraryAddressArray[libraryNumber]["longitude"];
 }
