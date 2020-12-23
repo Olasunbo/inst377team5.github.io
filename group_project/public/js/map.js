@@ -1,61 +1,70 @@
-function initMap(){
-    let location = {lat: 38.859040, lng: -76.898850};
-   ;
-    
-    //new map
-    let map = new google.maps.Map(document.getElementById("map"),{
-        //map options
-        zoom: 10,
-        center: location
-    });
+let libaryURL = "https://data.princegeorgescountymd.gov/resource/7k64-tdwr.json?$$app_token=jEPGhTNlit9z8D7fmRGAzgP9b"; //json file where all the information is coming from
+let libaryinfo = []; // list of details about the libary 
+let temp = []; // might be needed
+let mapData = [];
+let settings = { method: "Get" };
+let map;
+//Get Libary coordinates and plop them on map
+window.onload = async function getLibaryData(){
+    console.log("I HAVE BEEN CALLED")
+    await fetch(libaryURL, settings)
+      .then(response => response.json())
+      .then(data =>libaryinfo.push(...data));
+    initMap(),
+    console.log("My Function is here too")
+    //console.log(data);
+    //console.log(data); 
+  };
 
-    addMarker({
-        coords:{lat: 38.859040, lng: -76.898850},
-        content:'<h2>Hillcrest Heights Branch Libray</h2><h3>2398 Iverson St, Hillcrest Heights, MD 20748</h3>'
+
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: new google.maps.LatLng(38.859040, -76.898850),
+      mapTypeId: "terrain",
     });
-    addMarker({
-        coords:{lat: 38.91545, lng: -76.91231},
-        content:'<h2>Francis A. Gregory Neighborhood Library</h2><h3>3660 Alabama Ave SE, Washington, DC 20020</h3>'
-    });
-    addMarker({
-        coords:{lat: 38.837926994749715, lng: -76.75424599096701},
-        content:'<h2>County Correctional Center Library</h2><h3>13400 Dille Dr, Upper Marlboro, MD 20772</h3>'
-    });
-    addMarker({
-        coords:{lat: 38.92137815873382, lng: -76.74166273844901},
-        content:'<h2>South Bowie Branch Library</h2><h3>15301 Hall Rd, Bowie, MD 20721</h3>'
-    });
-    addMarker({
-        coords:{lat: 38.84537834168984, lng: -76.95606871434686},
-        content:'<h2>Oxon Hill Branch Library</h2><h3> 6200 Oxon Hill Rd, Oxon Hill, MD 20745</h3>'
-    }); //Hillcrest Heights Branch Libray
-    addMarker({
-        coords:{lat: 38.816652182983894, lng: -76.88769846629866},
-        iconImage:'http://maps.google.com/mapfiles/kml/pal2/icon13.png',
-        content:'<h2>You are Here</h2>'
-    });
-    
-    // Add Marker Function
-    function addMarker(props){
-        let marker = new google.maps.Marker({
-        position: props.coords, 
-        map: map
-    });
-    //Check for customization
-    if(props.iconImage){
-        //set icon image
-        marker.setIcon(props.iconImage);
-    }
-    //Check Content
-    if(props.content){
-        let infoWindow = new google.maps.InfoWindow({
-            content:props.content
+    droppoints();
+
+
+    //
+    // Create a <script> tag and set the USGS URL as the source   
+
+
+
+    function droppoints(){
+        for(let x = 0; x < libaryinfo.length; x++){
+        console.log("I have been called too")
+        // if you get time call them into a put request and make them into a table
+        var branchname = libaryinfo[x]["branch_name"];
+        var liblat = libaryinfo[x]["location_1"]["latitude"];
+        var liblong = libaryinfo[x]["location_1"]["longitude"];
+        //console.log(branchname, liblat, liblong);
+        var directions = "http://maps.google.com/?q="+branchname;
+        const latLng = new google.maps.LatLng(liblat, liblong);
+        //const libnam = new google.maps.Title(branchname);
+        const marker = new google.maps.Marker({
+            position: latLng, 
+            map: map,
+            title: branchname,
+            url: directions
         });
-        marker.addListener('click',function(){
+        const infoWindow = new google.maps.InfoWindow({
+            content:branchname
+        });
+        marker.addListener('mouseover',function(){
             infoWindow.open(map, marker);
         });
+        marker.addListener('mouseout', function(){
+            infoWindow.close();
+        });
+        marker.addListener('click', function(){
+            window.location.href = directions;
+        });
+
     }
+    };
 
 
-}
-}
+};
+
