@@ -1,0 +1,24 @@
+{
+    "name": "group_project",
+    "version": "1.0.0",
+    "description": "A website that allows users to locate and review libaries in Prince George's County",
+    "main": "server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "start-watch": "nodemon src/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Team 5",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    },
+    "dependencies": {
+        "all": "^0.0.0",
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.0"
+    }
+}

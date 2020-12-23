@@ -45,23 +45,31 @@ function submitReview() {
     
   
   }
+
+/* 
+
+-------LOAD ALL PRIOR REVIEWS---------
+
+*/
+//get the SQLite table 
 let searchURL = "http://localhost:4000/allReviews";
 const feed = [];
 const fetchPromise = fetch(searchURL);
 fetchPromise
   .then(response => response.json())
-  .then(data => feed.push(...data))
-console.log(feed) 
+  .then(data => feed.push(...data)) 
 
-
+//create variable to add all contents to page
 const critique = document.getElementById('record')
 
+//display feed in a list form
 function addLTag(content) {
   let lTag = document.createElement("li");   // Create a <li> element
   lTag.innerHTML = content;       // Insert text
   critique.appendChild(lTag);          // Append <li> to <body>
 }
 
+//get content 
 function displayFeed(){
   console.log("Called Display Feed")
   return feed.map(comment =>{
@@ -73,7 +81,7 @@ function displayFeed(){
 
 }
 
-
+//Reload page and feed will be there
 window.onload = function(){
   displayFeed();
 }

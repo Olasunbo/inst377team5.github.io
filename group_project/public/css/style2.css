@@ -41,7 +41,7 @@ body {
 }
 
 /* https://www.w3schools.com/howto/howto_css_vertical_menu.asp*/
-
+/*Layout for menu that is shared across site*/
 .vertical-menu {
     display: flex;
     flex-direction: column;
@@ -78,6 +78,8 @@ body {
 https://www.w3schools.com/howto/howto_css_center-vertical.asp
 https://www.w3schools.com/cssref/pr_pos_top.asp
 */
+
+/*Directory Page layout*/
 
 .grid2x2, p, #map {
     max-width: 1200px;
@@ -135,6 +137,7 @@ https://www.w3schools.com/cssref/pr_pos_top.asp
     flex-wrap: wrap;
 }
 
+/*Review input section and Review Feed layout*/
 .feed {
     background-color: #FFF;
     color: black;
